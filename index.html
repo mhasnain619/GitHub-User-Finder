@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>User-Finder</h1>
+            <!-- <button id="theme-toggle">LIGHT 🌞</button> -->
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="userInput" placeholder="Search github username..." />
+            <button id="search-btn" onclick="searchBtn()">Search</button>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <div id="userImage">
+
+                    <img id="" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                        alt="Profile Picture">
+                </div>
+
+                <div class="username">
+                    <div>
+                        <h2>M Hasnain</h2>
+                        <p>hasnain0893@gmail.com</p>
+                    </div>
+                    <small>Joined 26 Jan 2011</small>
+                </div>
+            </div>
+
+            <p class="bio">Frontend Developer</p>
+
+            <div class="stats">
+                <div>
+                    <h3>Repos</h3>
+                    <p>8</p>
+                </div>
+                <div>
+                    <h3>Followers</h3>
+                    <p>3938</p>
+                </div>
+                <div>
+                    <h3>Following</h3>
+                    <p>9</p>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="location">
+                    <p><span><i class="fa-solid fa-location-dot"></i></span> San Francisco</p>
+                    <p><span><i class="fa-solid fa-link"></i></span> <a href="https://github.blog"
+                            target="_blank">https://github.blog</a></p>
+                </div>
+                <div class="location">
+                    <p><span><i class="fa-brands fa-instagram"></i></span> Not Available</p>
+                    <p><span>🏢</span> @github</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

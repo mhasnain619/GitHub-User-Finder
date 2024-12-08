@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141D2F;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0079FF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.profile-card {
+    background-color: #1E2A47;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-header h2 {
+    margin: 0;
+}
+
+.profile-header p {
+    margin: 5px 0;
+    color: #0079FF;
+}
+
+.profile-header small {
+    margin-top: 28px;
+    color: #FFFFFFAA;
+}
+
+.bio {
+    margin: 20px 0;
+
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141D2F;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFFAA;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.location {
+    display: flex;
+    gap: 250px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details span {
+    margin-right: 10px;
+    color: #FFFFFFAA;
+}
+
+.details a {
+    color: #0079FF;
+    text-decoration: none;
+}
