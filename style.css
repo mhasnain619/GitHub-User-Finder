@@ -125,7 +125,7 @@ header h1 {
 
 .location {
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
 }
 
 .details p {
