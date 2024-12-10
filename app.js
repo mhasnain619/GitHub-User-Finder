@@ -18,6 +18,8 @@ const fetchUserData = async (username) => {
         }
 
         const data = await fetchData.json();
+        console.log(data);
+
         return showData(data);
     } catch (error) {
         Swal.fire("An unexpected error occurred.");
