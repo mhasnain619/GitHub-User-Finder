@@ -25,7 +25,13 @@ const searchBtn = async () => {
     }
 }
 
+
 let showData = (data) => {
+    const formatDate = (isoString) => {
+        const date = new Date(isoString);
+        const options = { day: 'numeric', month: 'short', year: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
     userDataShow.innerHTML = `
     <div class="profile-card">
                 <div class="profile-header">
@@ -40,7 +46,7 @@ let showData = (data) => {
                             <h2>${data.name}</h2>
                             <p>${data.login}</p>
                         </div>
-                        <small>${data.created_at}</small>
+                        <small>${formatDate(data.created_at)}</small>
                     </div>
                 </div>
 
@@ -69,7 +75,8 @@ let showData = (data) => {
                                 target="_blank">${data.blog ? data.blog : 'Blog Not Available'}</a></p>
                     </div>
                     <div class="location">
-                        <p><span><i class="fa-brands fa-instagram"></i></span> Not Available</p>
+                        <p><span><i class="fa-brands fa-twitter"></i></span>${data.twitter_username ? data.twitter_username
+            : 'Twitter Not Available'}</p>
                         <p><span>🏢</span> @github</p>
                     </div>
                 </div>
